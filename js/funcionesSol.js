@@ -127,7 +127,7 @@ function generarNota() {
 
     console.log(notaActual)
 
-    document.getElementById("img").src = notas[notaActual].path;
+    document.getElementById("imgCentral").src = notas[notaActual].path;
 }
 
 function check() {

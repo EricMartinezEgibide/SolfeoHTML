@@ -14,16 +14,44 @@ body{
 
 header{
     display: flex;
-    background-color: gainsboro;
-    border-bottom: black 2px solid;
+    justify-content: left;
+    align-items: center;
+
+
+    background-color: rgb(2, 158, 219);
+    border-bottom: white 0px solid;
     padding: 10px;
-    
+    min-height: 40px;
     flex-basis: 100%;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    z-index:2;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.6);
 }
 
+
+
+.btHeader:visited, .btHeader{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+
+    padding: 5px;
+    padding-left: 10px;
+    margin-left: 10px;
+
+    border-left: 1px solid white;
+}
+
+
 #imgHome{
-    height: 50px;
+    height: 40px;
     width: auto;
+    border: 2px solid white;
+    padding:5px;
+    border-radius: 20px;
 }
 
 
@@ -36,7 +64,7 @@ header{
 
     
     background-image: url("../img/Background/img.png"), linear-gradient(#3c6fba, #16ccdd);    
-    background-size: 15px auto, cover;
+    background-size: 5px auto, cover;
 }
 
 
@@ -74,11 +102,16 @@ header{
     justify-content: center;
 }
 
-img {
+#imgCentral{
     height: auto;
     width: 70%;
     border-radius: 20px;
 
+    box-shadow: 0 0 0 2pt black;
+}
+
+#imgGit{
+    border-radius: 20px;
     box-shadow: 0 0 0 2pt black;
 }
 
@@ -157,6 +190,7 @@ width: 100%;
     font-size: 20px;
     text-align: center;
     border-radius: 5px;
+    outline-style: none;
 }
 
 
@@ -164,13 +198,26 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    border-top: white 0px solid;
     padding: 10px;
-    background-color: gainsboro;
-    border-top: black 1px solid;
+    min-height: 30px;
+    flex-basis: 100%;
+
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+    z-index:2;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.6);
 }
 
 #imgGit{
-    height: 50px;
+    height: 30px;
     width: auto;
 }
 
