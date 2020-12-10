@@ -11,8 +11,22 @@ class nota {
 
 let notas = new Array();
 
+$( document ).ready(function(){
 
-function inicializar() {
+    //CREO LOS COOKIES SI NO EXISTEN
+    if(getCookie("score") == null){
+        var score = [aciertos, fallos];
+        document.cookie = "score=" + JSON.stringify(score);
+    }else{
+        var arrayCookies = document.cookie;
+        arrayCookies = JSON.parse(arrayCookies.split('=').pop().split(';')[0]);
+        aciertos = parseInt(arrayCookies[0]);
+        fallos = parseInt(arrayCookies[1]);
+
+        //Actualizo la interfaz
+        let label = document.getElementById("LbPuntuacion")
+        label.innerHTML = "Aciertos: " + aciertos + " | Fallos: " + fallos;
+    }
 
 
     notas = new Array();
@@ -96,7 +110,7 @@ function inicializar() {
 
 
     generarNota()
-}
+});
 
 
 function generarNota() {
@@ -125,6 +139,11 @@ function check() {
         fallos += 1;
     }
 
+    //Guardo la nueva puntuación en las cookies.
+    var score = [aciertos, fallos];
+    document.cookie = "score=" + JSON.stringify(score);
+
+    //Actualizo la interfaz
     label.innerHTML = "Aciertos: " + aciertos + " | Fallos: " + fallos;
     document.getElementById("txRespuesta").value = "";
 }
