@@ -1,35 +1,30 @@
 *{
     font-family: Arial;
-}
-
-body{
-    background-image: linear-gradient(#3c6fba, #16ccdd);
-    height: 100vh;
-}
-
-#divTitulo{
-    display: flex;
-    justify-content: center;
-    margin: 40px;
-    font-weight: bold;
-    font-size: 50px;
-
     color: white;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
 }
 
-#divBotones{
+
+#divGeneral{
+
+    height: 100%;
+    
+    background-image: url("../img/Background/img.png"), linear-gradient(#3c6fba, #16ccdd);    
+    background-size: 5px auto, cover;
+    
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.btBoton{
-    min-height: 300px;
-    min-width: 300px;
-    margin: 20px;
+#tituloPrincipal{
     font-weight: bold;
-    font-size: 30px;
-    border-radius: 80px;
-    outline-style: none;
+    
+}
+
+.tales {
+    width: 100%;
+}
+
+.carousel-inner{
+    max-height: 400px;
 }
