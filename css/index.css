@@ -2,7 +2,11 @@
     font-family: Arial;
     color: white;
     text-shadow: 2px 2px 4px #000000;
-    font-size: 40px;
+    font-size: 50px;
+}
+
+.lbSubTitulo{
+    font-size: 30px;
 }
 
 #divGeneral{
@@ -28,3 +32,4 @@
 .carousel-inner{
     max-height: 400px;
 }
+
