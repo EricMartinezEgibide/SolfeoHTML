@@ -12,48 +12,6 @@ body{
     margin: 0px;
 }
 
-header{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-
-
-    background-color: rgb(2, 158, 219);
-    border-bottom: white 0px solid;
-    padding: 10px;
-    min-height: 40px;
-    flex-basis: 100%;
-
-    padding-left: 20px;
-    padding-right: 20px;
-
-    z-index:2;
-    box-shadow: 0px 0px 8px rgba(0,0,0,.6);
-}
-
-
-
-.btHeader:visited, .btHeader{
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-
-    padding: 5px;
-    padding-left: 10px;
-    margin-left: 10px;
-
-    border-left: 1px solid white;
-}
-
-
-#imgHome{
-    height: 40px;
-    width: auto;
-    border: 2px solid white;
-    padding:5px;
-    border-radius: 20px;
-}
-
 
 #divGeneral{
     display: flex;
@@ -191,34 +149,6 @@ width: 100%;
     text-align: center;
     border-radius: 5px;
     outline-style: none;
-}
-
-
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-
-    display: flex;
-    background-color: rgb(240, 240, 240);
-    border-top: white 0px solid;
-    padding: 10px;
-    min-height: 30px;
-    flex-basis: 100%;
-
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-
-
-    z-index:2;
-    box-shadow: 0px 0px 8px rgba(0,0,0,.6);
-}
-
-#imgGit{
-    height: 30px;
-    width: auto;
 }
 
 

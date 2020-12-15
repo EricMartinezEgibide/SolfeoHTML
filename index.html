@@ -5,28 +5,99 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<div id="divGeneral"> 
-    <!--https://www.w3schools.com/bootstrap/bootstrap_carousel.asp-->
-    
-    <h1 id="tituloPrincipal">CLASES</h1>
+  <div id="divGlobal">
 
-    <br>
-    <br>
-   
-    <div class="container">
-        <h2>Practica de forma libre</h2>
-        <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+    <header>
+      <a href="../index.html">
+          <img id="imgHome" src="../img/Interfaz/home-white.png" alt="">
+      </a>
+      <a class="btHeader">
+          <label>Elemento 2</label>
+      </a>
+      <a class="btHeader">
+          <label>Elemento 3</label>
+      </a>
+    </header>
+  
+  <div id="divGeneral"> 
+      <!--https://www.w3schools.com/bootstrap/bootstrap_carousel.asp-->
+      
+      <label id="lbTituloPrincipal">CLASES</h1>
+  
+      <br>
+      <br>
+     
+      <div class="container">
+          <label class="lbSubTitulo">Practica de forma libre</h2>
+          <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="10000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel1" data-slide-to="1"></li>
+              <li data-target="#myCarousel1" data-slide-to="2"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+        
+              <div class="item active">
+                <img src="img/Notas SOL/0.jpg" alt="Los Angeles">
+                <div class="carousel-caption">
+                  <h3>Clave de Sol</h3>
+                  <p>Practica el solfeo en clave de SOL</p>
+                </div>
+              </div>
+        
+              <div class="item">
+                <img src="img/Notas SOL/1.jpg" alt="Chicago">
+                <div class="carousel-caption">
+                  <h3>Chicago</h3>
+                  <p>Thank you, Chicago!</p>
+                </div>
+              </div>
+            
+              <div class="item">
+                <img src="img/Notas SOL/2.jpg" alt="New York">
+                <div class="carousel-caption">
+                  <h3>New York</h3>
+                  <p>We love the Big Apple!</p>
+                </div>
+              </div>
+          
+            </div>
+        
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+      </div>
+  
+      <br>
+      <br>
+      <br>
+  
+      <div class="container">
+        <label class="lbSubTitulo">Contra reloj</h2>
+        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
-            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel1" data-slide-to="1"></li>
-            <li data-target="#myCarousel1" data-slide-to="2"></li>
+            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel2" data-slide-to="1"></li>
+            <li data-target="#myCarousel2" data-slide-to="2"></li>
           </ol>
       
           <!-- Wrapper for slides -->
@@ -59,29 +130,29 @@
           </div>
       
           <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+          <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+          <a class="right carousel-control" href="#myCarousel2" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
             <span class="sr-only">Next</span>
           </a>
         </div>
     </div>
-
+    
     <br>
     <br>
     <br>
-
+  
     <div class="container">
-      <h2>Contra reloj</h2>
-      <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+      <label class="lbSubTitulo">Al tempo!</h2>
+      <div id="myCarousel3" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-          <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel2" data-slide-to="1"></li>
-          <li data-target="#myCarousel2" data-slide-to="2"></li>
+          <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel3" data-slide-to="1"></li>
+          <li data-target="#myCarousel3" data-slide-to="2"></li>
         </ol>
     
         <!-- Wrapper for slides -->
@@ -114,11 +185,11 @@
         </div>
     
         <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+        <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+        <a class="right carousel-control" href="#myCarousel3" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -128,66 +199,21 @@
   <br>
   <br>
   <br>
+  
+  </div>
+  
+  </div>
+  
+  <footer>
+    <label id="lbCreditos">Developed by Eric Mtz</label>
+    <a href="https://github.com/EricMtzFdez/SolfeoHTML">
+        <img id="imgGit" src="../img/Interfaz/github.png" alt="">
+    </a>
+  </footer>
 
-  <div class="container">
-    <h2>Al ritmo!</h2>
-    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel3" data-slide-to="1"></li>
-        <li data-target="#myCarousel3" data-slide-to="2"></li>
-      </ol>
-  
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-  
-        <div class="item active">
-          <img src="img/Notas SOL/0.jpg" alt="Los Angeles">
-          <div class="carousel-caption">
-            <h3>Clave de Sol</h3>
-            <p>Practica el solfeo en clave de SOL</p>
-          </div>
-        </div>
-  
-        <div class="item">
-          <img src="img/Notas SOL/1.jpg" alt="Chicago">
-          <div class="carousel-caption">
-            <h3>Chicago</h3>
-            <p>Thank you, Chicago!</p>
-          </div>
-        </div>
-      
-        <div class="item">
-          <img src="img/Notas SOL/2.jpg" alt="New York">
-          <div class="carousel-caption">
-            <h3>New York</h3>
-            <p>We love the Big Apple!</p>
-          </div>
-        </div>
-    
-      </div>
-  
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel3" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-</div>
+  </div>
 
-<br>
-<br>
-<br>
-
-</div>
-
-  
-</div>
+ 
 
 </body>
 </html>
