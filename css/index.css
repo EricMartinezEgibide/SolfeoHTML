@@ -1,4 +1,4 @@
-#lbTituloPrincipal{
+#lbTituloPrincipal, .lbSubTitulo{
     font-family: Arial;
     color: white;
     text-shadow: 2px 2px 4px #000000;
@@ -35,3 +35,11 @@
     max-height: 500px;
 }
 
+.divSuperior{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.pDescripcion{
+    font-size: 20px;
+}
