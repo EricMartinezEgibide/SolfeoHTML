@@ -93,16 +93,17 @@ input[type=checkbox] {
 
 #divOpciones{
     margin: 5px;
+    min-width: 110px;
     
     display: flex;
     flex-direction: column;
 }
 
 .opcion {
-
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 #divFormButton{
